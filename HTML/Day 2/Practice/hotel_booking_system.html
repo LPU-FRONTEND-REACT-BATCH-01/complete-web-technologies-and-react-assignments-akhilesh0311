@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+</head>
+<body>
+
+    <h1>Hotel Booking System</h1>
+
+    <form action="submit_booking.php" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name"><br><br>
+        
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name"><br><br>
+
+        <label for="gender">Gender:</label>
+        
+            <br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>    
+        </select><br><br>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+
+        Room Type:<br>
+        <input type="radio" id="single" name="roomType" value="single" required>
+        <label for="single">Single</label><br>  
+        <input type="radio" id="double" name="roomType" value="double" required>
+        <label for="double">Double</label><br>  
+        <input type="radio" id="suite" name="roomType" value="suite" required>
+        <label for="suite">Suite</label><br><br>
+
+        number of guests:<br>
+        <input type="checkbox" id="guest1" name="guests" value="1">
+        <label for="guest1">1</label><br>
+        <input type="checkbox" id="guest2" name="guests" value="2">
+        <label for="guest2">2</label><br>
+        <input type="checkbox" id="guest3" name="guests" value="3">
+        <label for="guest3">3</label><br>
+        <input type="checkbox" id="guest4" name="guests" value="4">
+        <label for="guest4">4</label><br><br>
+
+        <label for="checkIn">Check-in Date:</label>
+        <input type="date" id="checkIn" name="checkIn" required><br><br>
+
+        <label for="checkOut">Check-out Date:</label>
+        <input type="date" id="checkOut" name="checkOut" required><br><br>
+
+        city:<br>
+        <input type="radio" id="city1" name="city" value="newyork" required>
+        <label for="city1">New York</label><br>
+        <input type="radio" id="city2" name="city" value="losangeles" required>
+        <label for="city2">Los Angeles</label><br>
+        <input type="radio" id="city3" name="city" value="chicago" required>
+        <label for="city3">Chicago</label><br><br>
+
+        term and condition:<br>
+        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+        <label for="terms">I accept the terms and conditions</label><br><br>
+
+        suggestions:<br>
+        <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Enter your suggestions here..."></textarea><br><br>   
+
+
+        <input type="submit" value="Book Now">
+    </form>
+
+</body>
+</html>
