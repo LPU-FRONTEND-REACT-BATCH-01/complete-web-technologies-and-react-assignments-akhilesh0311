@@ -1,0 +1,30 @@
+body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: #5a5a8c;
+    text-align: center;
+}
+
+h2 {
+    color: #4a4a4a;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.fav-site {
+    font-style: italic;
+    font-weight: bold;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+}

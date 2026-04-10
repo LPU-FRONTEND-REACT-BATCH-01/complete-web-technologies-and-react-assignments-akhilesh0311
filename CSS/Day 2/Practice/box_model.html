@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model Practice</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 5px solid darkblue;
+            padding: 20px;
+            margin: 30px;
+            display: inline-block;
+        }
+        
+        .box2 {
+            box-sizing: border-box; /* Includes padding and border in width/height */
+        }
+    </style>
+</head>
+<body>
+    <h1>The Box Model</h1>
+    <div class="box">Standard Box Model</div>
+    <div class="box box2">Border-Box Model</div>
+</body>
+</html>
