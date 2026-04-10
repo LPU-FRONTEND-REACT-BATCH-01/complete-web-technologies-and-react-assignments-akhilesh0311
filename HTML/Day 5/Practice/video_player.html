@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+    <h2>HTML5 Video Element</h2>
+    <p>Embedding video is similar to embedding audio. We use the <code>&lt;video&gt;</code> element.</p>
+
+    <!-- The poster attribute shows an image before the video loads or plays -->
+    <video width="640" height="360" controls poster="thumbnail.jpg">
+        <!-- Replace the source with a valid video file path -->
+        <source src="sample_video.mp4" type="video/mp4">
+        <source src="sample_video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    
+    <hr>
+    <h3>Autoplaying Background Video</h3>
+    <video width="320" height="240" autoplay loop muted>
+        <source src="sample_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>

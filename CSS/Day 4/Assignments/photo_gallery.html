@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Photo Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px; /* Adds space between flex items */
+            justify-content: center;
+        }
+
+        .gallery-item {
+            /* Flex-basis of roughly 30% to fit 3 in a row with gap calculation */
+            flex: 1 1 300px; 
+            height: 200px;
+            background-color: #bdc3c7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            background-color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <h2>My Flexbox Gallery</h2>
+    <div class="gallery">
+        <div class="gallery-item">Image 1</div>
+        <div class="gallery-item">Image 2</div>
+        <div class="gallery-item">Image 3</div>
+        <div class="gallery-item">Image 4</div>
+        <div class="gallery-item">Image 5</div>
+        <div class="gallery-item">Image 6</div>
+    </div>
+</body>
+</html>

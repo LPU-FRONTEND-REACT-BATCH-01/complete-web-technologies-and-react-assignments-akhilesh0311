@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Card Layout</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            padding: 40px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap; /* Important for responsiveness */
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            flex: 1 1 300px; /* Grow, shrink, base width */
+            max-width: 400px;
+            display: flex;
+            flex-direction: column; /* To push button to bottom */
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1; /* Pushes footer down if content is short */
+        }
+
+        .card-title {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .card-footer {
+            padding: 15px 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #eee;
+            text-align: right;
+        }
+
+        .btn {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Recent Articles</h2>
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="card-img" style="background-color: #e74c3c;">Image 1</div>
+            <div class="card-content">
+                <h3 class="card-title">Learning Flexbox</h3>
+                <p>Flexbox simplifies layout structures dramatically, making it easy to align and distribute space.</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img" style="background-color: #f1c40f;">Image 2</div>
+            <div class="card-content">
+                <h3 class="card-title">CSS Grid vs Flexbox</h3>
+                <p>Understand when to use a 1-dimensional layout system vs a 2-dimensional one.</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img" style="background-color: #8e44ad;">Image 3</div>
+            <div class="card-content">
+                <h3 class="card-title">Responsive Design Basics</h3>
+                <p>Use flex-wrap and flex-basis to effortlessly create responsive card grids without media queries.</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

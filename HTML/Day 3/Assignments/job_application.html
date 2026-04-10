@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <h2>Apply for a Position</h2>
+    <hr>
+    
+    <form action="#" enctype="multipart/form-data">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Ten digit phone number" required>
+        <br><br>
+        
+        <label for="role">Position Applied For:</label>
+        <select id="role" name="role" required>
+            <option value="" disabled selected>Select a role...</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="fullstack">Full Stack Developer</option>
+            <option value="designer">UI/UX Designer</option>
+        </select>
+        <br><br>
+        
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" max="50">
+        <br><br>
+        
+        <label for="resume">Upload Resume (PDF/DOCX):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <br><br>
+        
+        <label for="startdate">Available Start Date:</label>
+        <input type="date" id="startdate" name="startdate">
+        <br><br>
+        
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>

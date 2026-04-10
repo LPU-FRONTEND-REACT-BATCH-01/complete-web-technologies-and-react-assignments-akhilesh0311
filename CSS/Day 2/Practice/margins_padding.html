@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins and Padding</title>
+    <style>
+        .container {
+            background-color: lightgrey;
+            border: 2px solid black;
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 2px solid blue;
+        }
+
+        .padding-box {
+            /* padding adds space inside the border */
+            padding: 30px; 
+        }
+
+        .margin-box {
+            /* margin adds space outside the border */
+            margin: 30px; 
+        }
+
+        .both-box {
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exploring Margins and Padding</h2>
+
+    <h3>No Margin or Padding</h3>
+    <div class="container">
+        <div class="box">Content stays close to the border.</div>
+    </div>
+    <br>
+
+    <h3>Padding Only</h3>
+    <div class="container">
+        <div class="box padding-box">Content is pushed away from the internal borders.</div>
+    </div>
+    <br>
+
+    <h3>Margin Only</h3>
+    <div class="container">
+        <div class="box margin-box">The box is pushed away from external elements.</div>
+    </div>
+    <br>
+
+    <h3>Both Margin and Padding</h3>
+    <div class="container">
+        <div class="box both-box">Combines internal spacing and external spacing.</div>
+    </div>
+
+</body>
+</html>

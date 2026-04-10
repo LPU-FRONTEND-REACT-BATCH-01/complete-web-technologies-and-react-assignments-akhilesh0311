@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation in HTML</title>
+</head>
+<body>
+    <h2>Client-Side Form Validation Practice</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="username">Username (Required, Min 4 characters):</label><br>
+            <input type="text" id="username" name="username" required minlength="4">
+        </div>
+        <br>
+        <div>
+            <label for="pwd">Password (Required, Max 12 characters):</label><br>
+            <input type="password" id="pwd" name="pwd" required maxlength="12">
+        </div>
+        <br>
+        <div>
+            <label for="age">Age (Must be above 18):</label><br>
+            <input type="number" id="age" name="age" required min="18">
+        </div>
+        <br>
+        <div>
+            <!-- Using pattern for simple regex validation -->
+            <label for="zipcode">Zip Code (5 digits only):</label><br>
+            <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="Five digit zip code">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>

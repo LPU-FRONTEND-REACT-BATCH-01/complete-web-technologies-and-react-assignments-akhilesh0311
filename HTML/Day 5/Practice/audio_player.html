@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+</head>
+<body>
+    <h2>HTML5 Audio Element</h2>
+    <p>Use the HTML5 <code>&lt;audio&gt;</code> element to embed sound content in documents.</p>
+
+    <audio controls>
+        <!-- Replace the source with a valid audio file path -->
+        <source src="sample.mp3" type="audio/mpeg">
+        <source src="sample.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+    <h3>Audio with autoplay and loop (Muted to respect user preference)</h3>
+    <audio controls autoplay loop muted>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+</head>
+<body>
+    <h1>Product Feedback Survey</h1>
+    
+    <form action="#">
+        <div>
+            <label for="product">Which product did you purchase?</label><br>
+            <input list="products" id="product" name="product">
+            <datalist id="products">
+                <option value="Laptop">
+                <option value="Smartphone">
+                <option value="Tablet">
+                <option value="Smartwatch">
+            </datalist>
+        </div>
+        <br>
+        
+        <div>
+            <label>How satisfied were you with the product?</label><br>
+            <input type="radio" id="v-satisfied" name="satisfaction" value="Very Satisfied">
+            <label for="v-satisfied">Very Satisfied</label><br>
+            <input type="radio" id="satisfied" name="satisfaction" value="Satisfied">
+            <label for="satisfied">Satisfied</label><br>
+            <input type="radio" id="neutral" name="satisfaction" value="Neutral">
+            <label for="neutral">Neutral</label><br>
+            <input type="radio" id="dissatisfied" name="satisfaction" value="Dissatisfied">
+            <label for="dissatisfied">Dissatisfied</label>
+        </div>
+        <br>
+        
+        <div>
+            <label>What features did you like? (Check all that apply)</label><br>
+            <input type="checkbox" id="design" name="features" value="Design">
+            <label for="design">Design</label><br>
+            <input type="checkbox" id="performance" name="features" value="Performance">
+            <label for="performance">Performance</label><br>
+            <input type="checkbox" id="battery" name="features" value="Battery Life">
+            <label for="battery">Battery Life</label><br>
+            <input type="checkbox" id="price" name="features" value="Price">
+            <label for="price">Price</label>
+        </div>
+        <br>
+        
+        <div>
+            <label for="feedback">Additional Comments:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Let us know how we can improve..."></textarea>
+        </div>
+        <br>
+        
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

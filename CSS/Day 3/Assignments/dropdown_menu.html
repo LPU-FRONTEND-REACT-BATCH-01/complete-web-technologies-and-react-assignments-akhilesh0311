@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #2980b9;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1; /* Ensure dropdown appears over other elements */
+            top: 100%; /* Position right below the button */
+            left: 0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ecf0f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #1f618d;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hoverable CSS Dropdown</h2>
+
+    <div class="dropdown">
+        <button class="dropbtn">Services &#9660;</button>
+        <div class="dropdown-content">
+            <a href="#">Web Design</a>
+            <a href="#">SEO Optimization</a>
+            <a href="#">Digital Marketing</a>
+        </div>
+    </div>
+    
+    <p>The dropdown content uses absolute positioning relative to its parent container.</p>
+</body>
+</html>

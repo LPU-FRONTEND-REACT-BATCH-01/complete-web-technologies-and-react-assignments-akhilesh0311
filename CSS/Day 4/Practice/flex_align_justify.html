@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Align and Justify</title>
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+            background-color: #f4f4f4;
+            border: 2px solid #ccc;
+            margin-bottom: 30px;
+        }
+
+        .flex-item {
+            background-color: #e67e22;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+            font-size: 18px;
+        }
+
+        /* Justify Content (Horizontal alignment in row direction) */
+        .justify-center {
+            justify-content: center;
+        }
+        
+        .justify-space-between {
+            justify-content: space-between;
+        }
+
+        /* Align Items (Vertical alignment in row direction) */
+        .align-center {
+            align-items: center;
+        }
+
+        /* Perfect Centering */
+        .perfect-center {
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexbox alignment properties</h2>
+
+    <h3>justify-content: space-between</h3>
+    <div class="flex-container justify-space-between">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <h3>align-items: center</h3>
+    <div class="flex-container align-center">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <h3>Perfect Centering (justify-content & align-items)</h3>
+    <div class="flex-container perfect-center">
+        <div class="flex-item">I am perfectly centered!</div>
+    </div>
+</body>
+</html>
