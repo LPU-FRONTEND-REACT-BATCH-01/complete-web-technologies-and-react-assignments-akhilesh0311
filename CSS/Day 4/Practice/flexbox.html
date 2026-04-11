@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Practice</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row; /* Try column */
+            justify-content: space-between; /* Try center, space-around */
+            align-items: center;
+            background-color: #ddd;
+            height: 200px;
+        }
+        .flex-item {
+            background-color: cornflowerblue;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Basics</h1>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</body>
+</html>

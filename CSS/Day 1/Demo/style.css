@@ -1,0 +1,28 @@
+
+body {
+  background-color: #f4f4f4;
+  text-align: center;
+  font-family: Arial;
+}
+
+.title {
+  color: blue;
+  font-size: 40px;
+}
+
+#para {
+  color: green;
+  font-size: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}

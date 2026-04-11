@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        h2 {
+            color: navy;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #special {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: green;
+        }
+
+        /* Hover Pseudo-class */
+        a:hover {
+            color: orange;
+            text-decoration: none;
+        }
+
+        /* Group Selector */
+        h3, h4 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Element Selector applies to this H2</h2>
+    <p>This is a normal paragraph.</p>
+    
+    <p class="highlight">This paragraph uses a class selector named .highlight.</p>
+    <span class="highlight">This span also uses the .highlight class.</span>
+    
+    <p id="special">This paragraph uses an ID selector and should be unique on the page.</p>
+    
+    <div>
+        <p>This paragraph is inside a div, so the descendant selector affects it.</p>
+    </div>
+    <p>This one is outside, so it is normal.</p>
+    
+    <a href="#">Hover over this link!</a>
+    
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <p>(Both H3 and H4 are grouped together for the underline style).</p>
+</body>
+</html>

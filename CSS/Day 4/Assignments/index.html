@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holy Grail Layout</title>
+    <style>
+        body { margin: 0; display: flex; flex-direction: column; height: 100vh; font-family: sans-serif; }
+        header, footer { background: #333; color: white; text-align: center; padding: 20px; }
+        .main-content { display: flex; flex: 1; }
+        nav { background: #ccc; width: 200px; padding: 20px; }
+        article { flex: 1; padding: 20px; background: #eee; }
+        aside { background: #ccc; width: 200px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="main-content">
+        <nav>Nav / Sidebar</nav>
+        <article>Main Article Content</article>
+        <aside>Right Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>

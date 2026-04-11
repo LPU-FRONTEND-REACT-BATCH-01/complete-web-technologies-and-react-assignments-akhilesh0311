@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning Portal</title>
+</head>
+<body>
+    <header>
+        <h1>Learn HTML Basics</h1>
+    </header>
+
+    <main>
+        <section id="lesson-intro">
+            <h2>Lesson 1: Introduction to HTML</h2>
+            <p>Welcome to your first lesson on HTML. HTML stands for HyperText Markup Language.</p>
+        </section>
+
+        <section id="video-lesson">
+            <h2>Watch the Tutorial</h2>
+            <!-- Embedded from YouTube -->
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="HTML Full Course" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="audio-notes">
+            <h2>Audio Summary</h2>
+            <p>Listen to a quick recap of the video lesson:</p>
+            <audio controls>
+                <source src="summary.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section id="quiz">
+            <h2>Quick Quiz</h2>
+            <form action="#">
+                <p>What does HTML stand for?</p>
+                <input type="radio" id="q1a" name="q1" value="HyperText Markup Language">
+                <label for="q1a">HyperText Markup Language</label><br>
+                <input type="radio" id="q1b" name="q1" value="Hyper Transfer Markup Line">
+                <label for="q1b">Hyper Transfer Markup Line</label><br>
+                <button type="submit">Submit Answer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Keep up the great work!</p>
+    </footer>
+</body>
+</html>

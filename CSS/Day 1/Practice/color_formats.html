@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Formats</title>
+    <style>
+        .named-color {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+        
+        .hex-color {
+            background-color: #4CAF50; /* Green */
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        .rgb-color {
+            background-color: rgb(0, 140, 255); /* Blue */
+            color: white;
+            padding: 10px;
+        }
+
+        .rgba-color {
+            background-color: rgba(255, 0, 0, 0.3); /* Red with 30% opacity */
+            padding: 10px;
+        }
+
+        .hsl-color {
+            background-color: hsl(280, 100%, 50%); /* Purple */
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exploring CSS Colors</h2>
+    <div class="named-color">This uses a named color (tomato).</div><br>
+    <div class="hex-color">This uses a HEX color code (#4CAF50).</div><br>
+    <div class="rgb-color">This uses an RGB value (rgb(0, 140, 255)).</div><br>
+    <div class="rgba-color">This uses an RGBA value for transparency (rgba(255, 0, 0, 0.3)).</div><br>
+    <div class="hsl-color">This uses an HSL value (hsl(280, 100%, 50%)).</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .content-box {
+            box-sizing: content-box; /* Default */
+            width: 300px;
+            padding: 20px;
+            border: 5px solid red;
+            background-color: lightyellow;
+            margin-bottom: 20px;
+        }
+
+        .border-box {
+            box-sizing: border-box; /* Better for layouts */
+            width: 300px;
+            padding: 20px;
+            border: 5px solid green;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Box Sizing Property</h2>
+
+    <p>Both boxes have `width: 300px`, `padding: 20px`, and `border: 5px solid`.</p>
+
+    <h3>content-box (Default)</h3>
+    <p>Actual width = 300 + (20*2) + (5*2) = 350px</p>
+    <div class="content-box">
+        This box expands beyond 300px because padding and border are added to the width.
+    </div>
+
+    <h3>border-box</h3>
+    <p>Actual width = 300px (padding and border cut into the width)</p>
+    <div class="border-box">
+        This box stays exactly 300px wide. Padding and border are included in the width calculation!
+    </div>
+</body>
+</html>

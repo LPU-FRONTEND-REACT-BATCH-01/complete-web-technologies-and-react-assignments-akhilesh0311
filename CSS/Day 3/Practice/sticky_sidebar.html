@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Positioning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 2000px; /* Force scrolling */
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            
+            /* Sticky positioning applied here */
+            position: sticky;
+            top: 0; 
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Sticky Sidebar</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Settings</li>
+            <li>Profile</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Scroll the page down!</h1>
+        <p>The sidebar uses <code>position: sticky;</code>. It acts like <code>position: relative;</code> until it hits the defined offset (top: 0 in this case), and then it acts like <code>position: fixed;</code>.</p>
+        <p>Keep scrolling... The sidebar will follow you.</p>
+    </div>
+</body>
+</html>
